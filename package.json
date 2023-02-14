@@ -15,6 +15,14 @@
   "bugs": {
     "url": "https://github.com/cf9874/gscook/issues"
   },
-  "homepage": "https://github.com/cf9874/gscook#readme"
-
+  "scripts": {
+  "install-root": "npm install",
+  "start-front": "cd gs-front && npm run dev",
+  "start-back": "cd gs-back && npm run start:dev",
+  "start-all": "npm-run-all start-back start-front "
+},
+  "homepage": "https://github.com/cf9874/gscook#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }
